@@ -16,6 +16,13 @@
              * In action: http://screencast.com/t/ZDYwZGYyZ
              */
             $(document).ready(function(){
+              $('input[name=doit]').click(function() {
+                var text = $('input[type=text]')[0].value;
+                if ($('input[name=upper]')[0].checked) {
+                  text = text.toUpperCase();
+                }
+                $('ul').append('<li>'+text+'</li>');
+              });
                 
                 
                 
