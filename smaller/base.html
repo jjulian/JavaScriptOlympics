@@ -16,7 +16,7 @@
             var a = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', br = '<div class="clr"/>';
             $(document).ready(function(){
                 //START
-e=$('#a');for(x=1;x<27;x++){e.append('<div>'+a.charAt(x-1));if(x%9<1)e.append(br)}
+for(x=1;x<27;x++){$('#a').append('<div>'+a.charAt(x-1)+'</div>'+(x%9?'':br))}
                 //END
             });
         </script>
